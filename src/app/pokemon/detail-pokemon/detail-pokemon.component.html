@@ -48,9 +48,11 @@
         </div>
         <div class="card-action">
           <a (click)="goBack()">Retour</a>
+          <a (click)="goToEditPokemon(pokemon)">Editer</a>
+          <a (click)="deletePokemon(pokemon)">Supprimer</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<h4 *ngIf="!pokemon" class="center">Aucun pokémon à afficher !</h4>
+<h4 *ngIf="!pokemon" class="center"><pkmn-loader></pkmn-loader></h4>
